@@ -1,2 +1,15 @@
-安装模块： npm install/ mpn i
-运行： npm run dev:weapp
+# umi project
+
+## Getting Started
+
+Install dependencies,
+
+```bash
+$ npm install/ mpn i
+```
+
+Start the dev server,
+
+```bash
+$ npm run dev:weapp
+```
