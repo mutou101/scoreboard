@@ -1,4 +1,4 @@
-# umi project
+# taro project
 
 ## Getting Started
 
