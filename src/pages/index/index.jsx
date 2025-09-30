@@ -1,15 +1,25 @@
 import { View, Text } from '@tarojs/components';
 import { useLoad } from '@tarojs/taro';
+import Taro from '@tarojs/taro';
 import './index.scss';
 
 export default function Index () {
+  
+  const { router = {} } = Taro.getCurrentInstance();
+  console.log('', router);
   useLoad(() => {
     console.log('Page loaded.');
   })
 
+  const handeClickUser = () => {
+    Taro.navigateTo({
+      url: '/pages/base/user/index'
+    });
+  }
+
   return (
-    <View className="web-view">
-      <View className='at-article__h3'>常德市第四人民医院用户服务协议</View>
+    <View className="index-view">
+      <View className='at-article__h3 title' onClick={handeClickUser}>常德市第四人民医院用户服务协议</View>
       <View className='at-article__content'>
         <View className='at-article__section'>
           <View className='at-article__p'>
